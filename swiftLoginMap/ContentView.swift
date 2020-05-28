@@ -12,15 +12,27 @@ import SwiftUI
 struct ContentView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [MKPointAnnotation]()
+    @State private var searchTerm: String = ""
+    
+    let names = ["Azam", "Jake", "Alex", "Mary"]
+    
+    var appartment:AppartmentModel
     
     var body: some View {
         ZStack {
             MapView(centerCoordinate: $centerCoordinate, annotations: locations)
                 .edgesIgnoringSafeArea(.all)
-            Circle()
-                .fill(Color.blue)
-                .opacity(0.3)
-                .frame(width: 32, height: 32)
+            
+//            List {
+//                SearchBar(text: $searchTerm)
+//                
+//                ForEach(self.names.filter {
+//                    self.searchTerm.isEmpty ? true :
+//                        $0.localizedCaseInsensitiveContains(self.searchTerm)
+//                }, id: \.self) { name in
+//                    Text(name)
+//                }
+//            }
             
             VStack {
                 Spacer()
@@ -45,8 +57,9 @@ struct ContentView: View {
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(appartment: appartmentData[0])
     }
 }

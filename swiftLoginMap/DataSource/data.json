@@ -1,2 +1,24 @@
-
+[
+    {
+        "id": 123,
+        "name": "Appartement 3 pièces",
+        "description": "Agréable appartement 3 pièces situé au 1er étage",
+        "latitude": 47.353687,
+        "longitude": 4.8567624
+    },
+    {
+        "id": 255,
+        "name": "Maison 6 pièces",
+        "description": "Agréable maison 6 pièces en centre ville",
+        "latitude": 47.304821,
+        "longitude": 5.1581998
+    },
+    {
+        "id": 353,
+        "name": "Appartement 1 pièce",
+        "description": "Agréable appartement 1 pièce",
+        "latitude": 47.22514,
+        "longitude": 5.0236
+    }
+]
 

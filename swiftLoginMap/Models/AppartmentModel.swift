@@ -8,8 +8,10 @@
 
 import SwiftUI
 
-struct AppartmentModel: Hashable, Codable, Identifiable {
-    var id:Int
-    var name:String
-    var description:String
+struct AppartmentModel: Identifiable, Decodable {
+    let id:Int
+    let name:String
+    let description:String
+    let latitude:Float
+    let longitude:Float
 }
