@@ -10,6 +10,7 @@ import Foundation
 
 let appartmentData:[AppartmentModel] = load("data.json")
 
+// Read the data.json file and convert to AppartmentModel Array
 func load<T:Decodable>(_ filename:String, as type:T.Type = T.self) -> T {
     let data:Data
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

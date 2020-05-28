@@ -10,6 +10,8 @@ import SwiftUI
 
 struct AppartmentListView: View {
     let searchTerm: String
+    
+    //Need develop associate function to show and hide list on the tap gesture
     var onTap: () -> ()
     
     var body: some View {
@@ -25,7 +27,7 @@ struct AppartmentListView: View {
             List {
                 ForEach(appartmentData) { appartment in
                     if(self.searchTerm.isEmpty) {
-                        NavigationLink(destination: AppartmentDetailsView(appartment: appartmentData[0])){
+                        NavigationLink(destination: AppartmentDetailsView(appartment: appartment)){
                             Text(appartment.name)
                         }
                     }else if(appartment.name.localizedCaseInsensitiveContains(self.searchTerm)){

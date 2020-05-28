@@ -9,9 +9,12 @@
 import MapKit
 import SwiftUI
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// All the comment line are a try for update MKPointAnnotation pin image
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 struct MapView: UIViewRepresentable {
     @Binding var centerCoordinate: CLLocationCoordinate2D
-    var annotations: [MKPointAnnotation]
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()

@@ -12,38 +12,34 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var locationManager = LocationManager()
     @State private var centerCoordinate = CLLocationCoordinate2D()
-    @State private var locations = [MKPointAnnotation]()
     @State private var searchTerm: String = ""
     
     var body: some View {
         ZStack(alignment: .top) {
             
             // Display MapView
-            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
+            MapView(centerCoordinate: $centerCoordinate)
                 .edgesIgnoringSafeArea(.all)
             
             // Display Search TextField
             TextField("Search", text: $searchTerm, onEditingChanged: {_ in }) {
-                //commit
-
-            }.textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
-            .offset(y: 44)
-            
-            // Display List View
-            AppartmentListView (searchTerm: searchTerm) {
                 
-            }.animation(.spring())
-                .offset(y: 100)
+            }.textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+                .offset(y: 44)
             
-//            List {
-//                ForEach(appartmentData) { appartment in
-//                    if(self.searchTerm.isEmpty) {
-//                        Text(appartment.name)
-//                    }else if(appartment.name.localizedCaseInsensitiveContains(self.searchTerm)){
-//                        Text(appartment.name)
-//                    }
-//                }
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // If NavigationView is set the other elements are not display
+            // But if don't set NavigationView, Navigation are disable...
+            // Need to check!
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+//            NavigationView {
+                // Display List View
+                AppartmentListView (searchTerm: searchTerm) {
+                    
+                }.animation(.spring())
+                    .offset(y: 100)
 //            }
         }
     }
