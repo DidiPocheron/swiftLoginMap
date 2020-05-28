@@ -18,6 +18,8 @@
 		0AB41297247F965F00589712 /* AppartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41296247F965F00589712 /* AppartmentModel.swift */; };
 		0AB41299247F9C4D00589712 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41298247F9C4D00589712 /* MapView.swift */; };
 		0AB4129B247FAA4500589712 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4129A247FAA4500589712 /* SearchBar.swift */; };
+		0ADBAD80247FF9790054450E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD7F247FF9790054450E /* LocationManager.swift */; };
+		0ADBAD82247FFD570054450E /* AppartmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD81247FFD570054450E /* AppartmentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		0AB41296247F965F00589712 /* AppartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentModel.swift; sourceTree = "<group>"; };
 		0AB41298247F9C4D00589712 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0AB4129A247FAA4500589712 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0ADBAD7F247FF9790054450E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0ADBAD81247FFD570054450E /* AppartmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			children = (
 				0AB41298247F9C4D00589712 /* MapView.swift */,
 				0AB4129A247FAA4500589712 /* SearchBar.swift */,
+				0ADBAD81247FFD570054450E /* AppartmentListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 		0AB4127B247F8E5400589712 /* swiftLoginMap */ = {
 			isa = PBXGroup;
 			children = (
+				0ADBAD7E247FF95E0054450E /* Managers */,
 				0A4770A6247FB89E008FD4D9 /* Services */,
 				0A4770A5247FB66D008FD4D9 /* ViewModels */,
 				0A4770A4247FB662008FD4D9 /* Views */,
@@ -128,6 +134,14 @@
 				0AB41296247F965F00589712 /* AppartmentModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0ADBAD7E247FF95E0054450E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0ADBAD7F247FF9790054450E /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,8 @@
 				0AB4127D247F8E5400589712 /* AppDelegate.swift in Sources */,
 				0AB41299247F9C4D00589712 /* MapView.swift in Sources */,
 				0AB4127F247F8E5400589712 /* SceneDelegate.swift in Sources */,
+				0ADBAD82247FFD570054450E /* AppartmentListView.swift in Sources */,
+				0ADBAD80247FF9790054450E /* LocationManager.swift in Sources */,
 				0AB41297247F965F00589712 /* AppartmentModel.swift in Sources */,
 				0AB41281247F8E5400589712 /* ContentView.swift in Sources */,
 				0AB41294247F94A700589712 /* data.swift in Sources */,
