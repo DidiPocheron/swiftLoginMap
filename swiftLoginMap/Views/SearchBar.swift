@@ -6,6 +6,10 @@
 //  Copyright © 2020 Dimitri. All rights reserved.
 //
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////// NOT USE IN THE PROJECT////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
 import Foundation
 import SwiftUI
 
@@ -22,7 +26,6 @@ struct SearchBar: UIViewRepresentable {
         }
         
         func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-                print("Let's go")
         }
         
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

@@ -23,7 +23,6 @@ struct MapView: UIViewRepresentable {
         for appartment in appartmentData {
             let annotation = MKPointAnnotation()
             annotation.title = appartment.name
-            print(appartment.name)
             annotation.subtitle = appartment.description
 //            annotation.imageName = "immoPicto"
             

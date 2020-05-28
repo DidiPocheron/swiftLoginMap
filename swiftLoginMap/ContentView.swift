@@ -37,7 +37,6 @@ struct ContentView: View {
                 .offset(y: 100)
             
 //            List {
-//                SearchBar(text: $searchTerm)
 //                ForEach(appartmentData) { appartment in
 //                    if(self.searchTerm.isEmpty) {
 //                        Text(appartment.name)

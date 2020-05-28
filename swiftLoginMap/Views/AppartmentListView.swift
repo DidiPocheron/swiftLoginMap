@@ -25,7 +25,9 @@ struct AppartmentListView: View {
             List {
                 ForEach(appartmentData) { appartment in
                     if(self.searchTerm.isEmpty) {
-                        Text(appartment.name)
+                        NavigationLink(destination: AppartmentDetailsView(appartment: appartmentData[0])){
+                            Text(appartment.name)
+                        }
                     }else if(appartment.name.localizedCaseInsensitiveContains(self.searchTerm)){
                         Text(appartment.name)
                     }
