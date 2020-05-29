@@ -36,10 +36,10 @@ struct ContentView: View {
             
 //            NavigationView {
                 // Display List View
-                AppartmentListView (searchTerm: searchTerm) {
-                    
-                }.animation(.spring())
-                    .offset(y: 100)
+//                AppartmentListView (searchTerm: searchTerm) {
+//                    
+//                }.animation(.spring())
+//                    .offset(y: 100)
 //            }
         }
     }
