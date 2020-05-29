@@ -19,6 +19,7 @@
 		0AB41299247F9C4D00589712 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41298247F9C4D00589712 /* MapView.swift */; };
 		0AB4129B247FAA4500589712 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4129A247FAA4500589712 /* SearchBar.swift */; };
 		0AC1C4FE2480E2BE00BE2A22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1C4FD2480E2BE00BE2A22 /* LoginView.swift */; };
+		0AC5DDB42480F96A00909A36 /* LoginTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5DDB32480F96A00909A36 /* LoginTextFieldView.swift */; };
 		0ADBAD80247FF9790054450E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD7F247FF9790054450E /* LocationManager.swift */; };
 		0ADBAD82247FFD570054450E /* AppartmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD81247FFD570054450E /* AppartmentListView.swift */; };
 		0ADBAD84248009630054450E /* AppartmentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD83248009630054450E /* AppartmentDetailsView.swift */; };
@@ -39,6 +40,7 @@
 		0AB41298247F9C4D00589712 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0AB4129A247FAA4500589712 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		0AC1C4FD2480E2BE00BE2A22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0AC5DDB32480F96A00909A36 /* LoginTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFieldView.swift; sourceTree = "<group>"; };
 		0ADBAD7F247FF9790054450E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0ADBAD81247FFD570054450E /* AppartmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentListView.swift; sourceTree = "<group>"; };
 		0ADBAD83248009630054450E /* AppartmentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentDetailsView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				0AB4129A247FAA4500589712 /* SearchBar.swift */,
 				0ADBAD81247FFD570054450E /* AppartmentListView.swift */,
 				0ADBAD83248009630054450E /* AppartmentDetailsView.swift */,
+				0AC5DDB32480F96A00909A36 /* LoginTextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC5DDB42480F96A00909A36 /* LoginTextFieldView.swift in Sources */,
 				0AB4129B247FAA4500589712 /* SearchBar.swift in Sources */,
 				0AB4127D247F8E5400589712 /* AppDelegate.swift in Sources */,
 				0AB41299247F9C4D00589712 /* MapView.swift in Sources */,
