@@ -18,6 +18,7 @@
 		0AB41297247F965F00589712 /* AppartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41296247F965F00589712 /* AppartmentModel.swift */; };
 		0AB41299247F9C4D00589712 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41298247F9C4D00589712 /* MapView.swift */; };
 		0AB4129B247FAA4500589712 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4129A247FAA4500589712 /* SearchBar.swift */; };
+		0AC1C4FE2480E2BE00BE2A22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1C4FD2480E2BE00BE2A22 /* LoginView.swift */; };
 		0ADBAD80247FF9790054450E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD7F247FF9790054450E /* LocationManager.swift */; };
 		0ADBAD82247FFD570054450E /* AppartmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD81247FFD570054450E /* AppartmentListView.swift */; };
 		0ADBAD84248009630054450E /* AppartmentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBAD83248009630054450E /* AppartmentDetailsView.swift */; };
@@ -37,6 +38,7 @@
 		0AB41296247F965F00589712 /* AppartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentModel.swift; sourceTree = "<group>"; };
 		0AB41298247F9C4D00589712 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0AB4129A247FAA4500589712 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0AC1C4FD2480E2BE00BE2A22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0ADBAD7F247FF9790054450E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0ADBAD81247FFD570054450E /* AppartmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentListView.swift; sourceTree = "<group>"; };
 		0ADBAD83248009630054450E /* AppartmentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppartmentDetailsView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0AB4127C247F8E5400589712 /* AppDelegate.swift */,
 				0AB4127E247F8E5400589712 /* SceneDelegate.swift */,
 				0AB41280247F8E5400589712 /* ContentView.swift */,
+				0AC1C4FD2480E2BE00BE2A22 /* LoginView.swift */,
 				0AB41282247F8E5600589712 /* Assets.xcassets */,
 				0AB41287247F8E5600589712 /* LaunchScreen.storyboard */,
 				0AB4128A247F8E5600589712 /* Info.plist */,
@@ -227,6 +230,7 @@
 				0ADBAD84248009630054450E /* AppartmentDetailsView.swift in Sources */,
 				0ADBAD80247FF9790054450E /* LocationManager.swift in Sources */,
 				0AB41297247F965F00589712 /* AppartmentModel.swift in Sources */,
+				0AC1C4FE2480E2BE00BE2A22 /* LoginView.swift in Sources */,
 				0AB41281247F8E5400589712 /* ContentView.swift in Sources */,
 				0AB41294247F94A700589712 /* data.swift in Sources */,
 			);
