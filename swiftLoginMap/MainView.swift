@@ -16,12 +16,12 @@ struct MainView: View {
         TabView {
             
             ContentView().tabItem ({
-                Image(systemName: "cart.fill")
+                Image(systemName: "mappin.circle")
                 Text(Constants.TabBarText.mapTabItemTitle)
             }).tag(0)
             
             AccountView(manager: manager).tabItem ({
-                Image(systemName: "cart.fill")
+                Image(systemName: "person.circle")
                 Text(Constants.TabBarText.accountTabItemTitle)
             }).tag(1)
         }

@@ -9,10 +9,6 @@
 import MapKit
 import SwiftUI
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// All the comment line are a try for update MKPointAnnotation pin image
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 struct MapView: UIViewRepresentable {
     @Binding var centerCoordinate: CLLocationCoordinate2D
     
@@ -27,39 +23,11 @@ struct MapView: UIViewRepresentable {
             let annotation = MKPointAnnotation()
             annotation.title = appartment.name
             annotation.subtitle = appartment.description
-//            annotation.imageName = "immoPicto"
-            
             annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(appartment.latitude), longitude: CLLocationDegrees(appartment.longitude))
             mapView.addAnnotation(annotation)
         }
         return mapView
     }
-    
-//    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-//
-//        if !(annotation is CustomPointAnnotation) {
-//            return nil
-//        }
-//
-//        let reuseId = "test"
-//
-//        var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
-//        if anView == nil {
-//            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-//            anView!.canShowCallout = true
-//        }
-//        else {
-//            anView!.annotation = annotation
-//        }
-//
-//        //Set annotation-specific properties **AFTER**
-//        //the view is dequeued or created...
-//
-//        let cpa = annotation as! CustomPointAnnotation
-//        anView!.image = UIImage(named:cpa.imageName)
-//
-//        return anView
-//    }
     
     func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
        
@@ -79,9 +47,21 @@ struct MapView: UIViewRepresentable {
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
             parent.centerCoordinate = mapView.centerCoordinate
         }
+        
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            let identifier = "Placermark"
+            
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+                annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                annotationView?.image = UIImage(named:"immoPicto")
+            }else{
+                annotationView?.annotation = annotation
+            }
+            return annotationView
+        }
     }
 }
-
-//class CustomPointAnnotation: MKPointAnnotation {
-//    var imageName: String!
-//}
