@@ -10,13 +10,8 @@ import SwiftUI
 import Combine
 
 class HttpAuth: ObservableObject {
-    var didChange = PassthroughSubject<HttpAuth, Never>()
     
-    var authentificated = false {
-        didSet {
-            didChange.send(self)
-        }
-    }
+     @Published var authentificated: Bool = false
     
     func checkDetails(username: String, password: String) {
         guard let url = URL(string: "http://localhost:3000/login") else {
@@ -35,7 +30,21 @@ class HttpAuth: ObservableObject {
         URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             
-            print(data)
+            guard let data = data else { return }
+            
+            let finalData = try! JSONDecoder().decode(ServerMessage.self, from: data)
+            
+            //////////////////////////////////////////////////////////////////////////////////////////
+            // Check need to be change to status code!
+            //////////////////////////////////////////////////////////////////////////////////////////
+            
+            if finalData.status == "ok" {
+                DispatchQueue.main.async {
+                    self.authentificated = true
+                }
+            }else{
+                print("error")
+            }
         }.resume()
     }
 }
@@ -45,13 +54,14 @@ struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
-    var manager = HttpAuth()
+    @ObservedObject var manager = HttpAuth()
     
     var body: some View {
         VStack(spacing: 10) {
             Image("LoginLogo")
             .resizable()
                 .frame(width: 100, height: 100)
+            
             LoginTextFieldView(
                 placeholder: Text("Nom d'utilisateur").foregroundColor(.red),
                 text: $username
@@ -69,6 +79,12 @@ struct LoginView: View {
             }) {
                 Text("Se connecter")
                     .foregroundColor(.black)
+            }
+            if (self.manager.authentificated) {
+                LoginTextFieldView(
+                    placeholder: Text("Nom d'utilisateur").foregroundColor(.red),
+                    text: $username
+                )
             }
         }.background(Image("LoginBackground")
             .scaledToFill()

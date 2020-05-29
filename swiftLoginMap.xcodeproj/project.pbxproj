@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1EB18324810FBD0051C292 /* ServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EB18224810FBD0051C292 /* ServerMessage.swift */; };
 		0AB4127D247F8E5400589712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4127C247F8E5400589712 /* AppDelegate.swift */; };
 		0AB4127F247F8E5400589712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4127E247F8E5400589712 /* SceneDelegate.swift */; };
 		0AB41281247F8E5400589712 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB41280247F8E5400589712 /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1EB18224810FBD0051C292 /* ServerMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMessage.swift; sourceTree = "<group>"; };
 		0AB41279247F8E5400589712 /* swiftLoginMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftLoginMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB4127C247F8E5400589712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB4127E247F8E5400589712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB41296247F965F00589712 /* AppartmentModel.swift */,
+				0A1EB18224810FBD0051C292 /* ServerMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				0AC1C4FE2480E2BE00BE2A22 /* LoginView.swift in Sources */,
 				0AB41281247F8E5400589712 /* ContentView.swift in Sources */,
 				0AB41294247F94A700589712 /* data.swift in Sources */,
+				0A1EB18324810FBD0051C292 /* ServerMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
